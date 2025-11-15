@@ -1,0 +1,7 @@
+backend/__pycache__/
+backend/.env
+backend/NeuralNets.db
+backend/core/__pycache__/
+backend/models/__pycache__/
+backend/langGraph/__pycache__/
+backend/database/__pycache__/
