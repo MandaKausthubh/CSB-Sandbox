@@ -1,0 +1,34 @@
+YouTube enforces policies to maintain user safety and prevent harm.
+
+Key Restricted Categories:
+1. Violence
+   - Graphic footage, violent injury, depictions of death, or encouragement of violence are prohibited.
+   - Threats or incitement toward individuals or groups are not allowed.
+
+2. Harmful or Dangerous Behavior
+   - Encouraging dangerous physical acts or self-harm is prohibited.
+   - Content promoting illegal activities such as drug misuse or weapon misuse is restricted.
+
+3. Misinformation
+   - Medical misinformation that contradicts authoritative health sources is prohibited.
+   - False claims about public safety, elections, or government processes may be removed.
+
+4. Hate Speech
+   - Content promoting hatred toward protected characteristics (race, gender, caste, religion, etc.) is not allowed.
+
+5. Child Safety
+   - Content involving minors must avoid sexualization, harm, or endangerment.
+   - Targeted harassment or bullying of minors is prohibited.
+
+6. Regulated Goods
+   - Promotion or sale of weapons, drugs, or age-restricted products requires compliance with strict guidelines.
+
+7. Sponsored Content
+   - Paid promotions must be disclosed clearly.
+   - Misleading ads or affiliate links violate policy.
+
+YouTube may demonetize videos for:
+- Excessive profanity
+- Controversial topics
+- Dangerous acts
+- Unsuitable content for advertisers

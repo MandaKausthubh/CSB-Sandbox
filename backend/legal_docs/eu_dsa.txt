@@ -1,0 +1,23 @@
+The EU Digital Services Act regulates online platforms to ensure user safety, transparency, and accountability.
+
+Key Principles:
+- Illegal content must be removed promptly once identified or reported.
+- Platforms must provide mechanisms to report harmful or unlawful content.
+- Misinformation related to public safety, elections, and health may trigger enhanced moderation.
+- Targeted advertising based on sensitive personal data (religion, health, sexual orientation) is restricted.
+- Platforms must disclose when content is paid, boosted, or sponsored.
+- Recipients of commercial content must be able to identify the advertiser.
+
+Risk Obligations for Large Platforms:
+- Assess and mitigate risks related to:
+  - The spread of illegal content
+  - Harmful manipulation (disinformation, deepfakes)
+  - Protection of minors
+  - Threats to public health or safety
+
+Content Ranking Transparency:
+- Platforms must explain how recommendations and algorithms work.
+- Users must be offered non-profile-based recommendation options.
+
+Penalties:
+- Violations can lead to fines up to 6% of global annual revenue.

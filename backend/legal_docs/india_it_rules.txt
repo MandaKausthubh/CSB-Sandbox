@@ -1,0 +1,27 @@
+India’s IT Rules 2021 outline requirements for online platforms operating in India.
+
+Key Requirements:
+- Platforms must remove prohibited content after receiving government or court notices.
+- Prohibited content includes:
+  - Content threatening national security or public order
+  - Harmful misinformation affecting health or public safety
+  - Defamatory content
+  - Obscene material, including sexual content involving children
+  - Content encouraging violence or promoting enmity between groups
+
+User Safety Obligations:
+- Mechanisms for user complaints and grievance redressal must be available.
+- Platforms must remove reported content within specific deadlines.
+
+Disclosure Rules:
+- Sponsored, paid, or promotional content must be clearly labeled.
+- Platforms must maintain transparency around content moderation decisions.
+
+Special Rules for Significant Social Media Intermediaries:
+- Mandatory compliance officers
+- User verification mechanisms
+- Ability to trace “first originator” of messages (for legal cases)
+
+Penalties include:
+- Loss of safe harbor immunity
+- Legal liability for user-generated content
