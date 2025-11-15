@@ -611,7 +611,7 @@ class GraphRunner:
         return [
             PersonaReactionAgent(self.llm_client),
             PlatformPolicyAgent(self.llm_client),
-            LegalEthicsAgentRAG(self.llm_client), # type: ignore
+            LegalEthicsAgentRAG(self.llm_client, rag_engine=self.rag_engine), # type: ignore
             BrandAgent(self.llm_client),
             AggregatorAgent(self.llm_client),
             FixerAgent(self.llm_client, risk_threshold=self.risk_threshold),
