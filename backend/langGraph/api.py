@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 import json
 from flask import jsonify
 
+from langGraph.run_analysis import run_graph_analysis
 from database.database import get_db
 from core.auth import get_current_user
 from models.analysis import AnalysisCreate, AnalysisOut
