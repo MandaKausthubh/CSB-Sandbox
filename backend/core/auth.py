@@ -1,5 +1,5 @@
 from datetime import timedelta
-from typing import Annotated
+from typing import Annotated, Dict
 from fastapi import APIRouter, Depends, HTTPException
 from starlette import status
 from database.database import db_dependancy
@@ -31,6 +31,7 @@ async def get_current_user(
         db: db_dependancy):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        print("PAYLOAD:", payload)
         userId: int = payload.get("id") # type: ignore
         print("CHECK POINT 0:", userId)
         userName: str = payload.get("username") # type: ignore
@@ -83,6 +84,6 @@ async def login_for_access_token(db: db_dependancy, form_data: OAuth2PasswordReq
         "email": user.userEmail,
         "createdAt": "2025-11-15T10:00:00Z"
     }
-    return { "success":True, "user":user ,"token": access_token, "token_type": "bearer"}
+    return { "success":True, "user":user ,"token": access_token, "access_token":access_token, "token_type": "bearer"}
 
 
