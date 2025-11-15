@@ -36,7 +36,7 @@ def create_analysis(
 
     # Store in DB
     analysis = Analysis(
-        owner_id=user.id,
+        owner_id=user.userId,
         project_id=payload.project_id if payload.project_id else None,
         title=None,
         input_text=payload.content,
@@ -57,7 +57,7 @@ def create_analysis(
     db.refresh(analysis)
 
     # Build final FE-compatible response
-    return jsonify({
+    return ({
         "success": True,
         "analysis": {
             "id": analysis.id,
@@ -87,7 +87,7 @@ def get_analysis_history(
 ):
     # Total count for pagination
     total = db.query(Analysis).filter(
-        Analysis.owner_id == user.id
+        Analysis.owner_id == user.userId
     ).count()
 
     # Fetch page
@@ -95,7 +95,7 @@ def get_analysis_history(
 
     rows = (
         db.query(Analysis)
-        .filter(Analysis.owner_id == user.id)
+        .filter(Analysis.owner_id == user.userId)
         .order_by(Analysis.created_at.desc())
         .offset(offset)
         .limit(limit)
@@ -138,7 +138,7 @@ def get_analysis(
     # Fetch analysis
     a = (
         db.query(Analysis)
-        .filter(Analysis.id == analysis_id, Analysis.owner_id == user.id)
+        .filter(Analysis.id == analysis_id, Analysis.owner_id == user.userId)
         .first()
     )
 
@@ -187,7 +187,7 @@ def delete_analysis(
     # Find the analysis, ensure it belongs to the user
     analysis = (
         db.query(Analysis)
-        .filter(Analysis.id == analysis_id, Analysis.owner_id == user.id)
+        .filter(Analysis.id == analysis_id, Analysis.owner_id == user.userId)
         .first()
     )
 

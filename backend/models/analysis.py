@@ -10,7 +10,8 @@ class Analysis(Base):
     __tablename__ = "analyses"
 
     id = Column(Integer, primary_key=True, index=True)
-    owner_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    owner_id = Column(Integer, ForeignKey("users.userId"), nullable=False)
+    project_id = Column(Integer, ForeignKey("projects.id"), nullable=True)
 
     title = Column(String(255), nullable=True)
     input_text = Column(Text, nullable=False)
@@ -24,6 +25,9 @@ class Analysis(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
 
+class Project(Base):
+    __tablename__ = "projects"
+    id = Column(Integer, primary_key=True)
 
 class AnalysisCreate(BaseModel):
     content: str

@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from typing import cast
 
 import models.user as user_models
+import models.analysis as analysis_models
 from core.auth import user_dependancy
 
 from database.database import engine, get_db
@@ -13,6 +14,7 @@ app = FastAPI()
 app.include_router(auth.router, prefix="/api")
 app.include_router(users.router, prefix="/api")
 user_models.Base.metadata.create_all(bind=engine)  # Ensure tables are created
+analysis_models.Base.metadata.create_all(bind=engine)  # Ensure tables are created
 
 @app.get("/dev/admin")
 def read_api(db: Session = Depends(get_db)):
